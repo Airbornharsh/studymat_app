@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:studymat_app/providers/StudyMats.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+  HomeScreen({super.key});
+  bool start = true;
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -18,8 +21,8 @@ class _HomeScreenState extends State<HomeScreen> {
     Future onLoad() async {
       final prefs = await SharedPreferences.getInstance();
       // prefs.setString("hopl_backend_uri", "http://localhost:3000");
-      // prefs.setString("shore_backend_uri", "http://10.0.2.2:3000");
-      prefs.setString("shore_backend_uri", "https://studymat.vercel.app");
+      prefs.setString("studymat_backend_uri", "http://192.168.1.35:3000");
+      // prefs.setString("studymat_backend_uri", "https://studymat.vercel.app");
     }
 
     onLoad();
@@ -27,6 +30,15 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    if (widget.start) {
+      Provider.of<StudyMat>(context).loadMat().then(
+            (value) {},
+          );
+      setState(() {
+        widget.start = false;
+      });
+    }
+
     return Scaffold();
   }
 }
