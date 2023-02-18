@@ -24,33 +24,28 @@ class _PdfViewerPageState extends State<PdfViewerPage> {
     print(file.path);
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text(name),
-        actions: pages >= 2
-            ? [
-                Center(child: Text(text)),
-                IconButton(
-                  icon: const Icon(Icons.chevron_left, size: 32),
-                  onPressed: () {
-                    final page = indexPage == 0 ? pages : indexPage - 1;
-                    _controller.setPage(page);
-                  },
-                ),
-                IconButton(
-                  icon: const Icon(Icons.chevron_right, size: 32),
-                  onPressed: () {
-                    final page = indexPage == pages - 1 ? 0 : indexPage + 1;
-                    _controller.setPage(page);
-                  },
-                ),
-              ]
-            : null,
-      ),
+      appBar: AppBar(title: Text(name), actions: [
+        Center(child: Text(text)),
+        IconButton(
+          icon: const Icon(Icons.chevron_left, size: 32),
+          onPressed: () {
+            final page = indexPage == 0 ? pages : indexPage - 1;
+            _controller.setPage(page);
+          },
+        ),
+        IconButton(
+          icon: const Icon(Icons.chevron_right, size: 32),
+          onPressed: () {
+            final page = indexPage == pages - 1 ? 0 : indexPage + 1;
+            _controller.setPage(page);
+          },
+        ),
+      ]),
       body: PDFView(
         filePath: file.path,
-        onRender: (pages) => setState(() => pages = pages!),
+        onRender: (pages) => setState(() => this.pages = pages!),
         onViewCreated: (controller) => setState(() => _controller = controller),
-        onPageChanged: (indexPage, _) => setState(() => indexPage = indexPage!),
+        onPageChanged: (indexPage, _) => setState(() => this.indexPage = indexPage!),
       ),
     );
   }
