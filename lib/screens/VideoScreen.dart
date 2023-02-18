@@ -22,8 +22,7 @@ class _VideoScreenState extends State<VideoScreen> {
     _controller = YoutubePlayerController(
         initialVideoId: YoutubePlayer.convertUrlToId(mat.link) as String,
         flags: const YoutubePlayerFlags(
-          autoPlay: false,
-        ));
+            autoPlay: false, controlsVisibleAtStart: true));
 
     return Scaffold(
       appBar: Orientation.portrait == MediaQuery.of(context).orientation

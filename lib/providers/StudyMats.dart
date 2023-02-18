@@ -61,7 +61,7 @@ class StudyMat with ChangeNotifier {
     return _institutions.length;
   }
 
-  Map<dynamic,dynamic> getInstitution(String institutionId) {
+  Map<dynamic, dynamic> getInstitution(String institutionId) {
     if (_institution.containsKey(institutionId)) {
       return _institution[institutionId];
     } else {
@@ -81,6 +81,8 @@ class StudyMat with ChangeNotifier {
 
       final parsedInstitutionBody = json.decode(institutionRes.body);
       _institutions.clear();
+
+      print(parsedInstitutionBody);
 
       parsedInstitutionBody.forEach((institution) {
         _institutions.add(Institution(

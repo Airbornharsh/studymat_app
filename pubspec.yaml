@@ -48,6 +48,7 @@ dependencies:
   path: ^1.8.2
   syncfusion_flutter_pdfviewer: ^20.4.50
   youtube_player_flutter: ^8.1.2
+  url_launcher: ^6.1.9
 
 dev_dependencies:
   flutter_test:

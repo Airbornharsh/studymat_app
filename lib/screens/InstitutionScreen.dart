@@ -4,6 +4,7 @@ import 'package:studymat_app/Utils/PdfApi.dart';
 import 'package:studymat_app/providers/StudyMats.dart';
 import 'package:studymat_app/screens/PdfViewerPage.dart';
 import 'package:studymat_app/screens/VideoScreen.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class InstitutionScreen extends StatefulWidget {
   static const routeName = "institution";
@@ -85,6 +86,12 @@ class _InstitutionScreenState extends State<InstitutionScreen> {
                                                 Navigator.of(context).pushNamed(
                                                     VideoScreen.routeName,
                                                     arguments: mat);
+                                              } else if (type == "playlist") {
+                                                if (await canLaunchUrl(
+                                                    Uri.parse(mat.link))) {
+                                                  await launchUrl(
+                                                      Uri.parse(mat.link));
+                                                }
                                               }
                                             },
                                             title:
