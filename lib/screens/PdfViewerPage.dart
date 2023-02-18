@@ -17,6 +17,12 @@ class _PdfViewerPageState extends State<PdfViewerPage> {
   int indexPage = 0;
 
   @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     final file = ModalRoute.of(context)!.settings.arguments as File;
     final name = basename(file.path);

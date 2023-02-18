@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:studymat_app/Utils/PdfApi.dart';
 import 'package:studymat_app/providers/StudyMats.dart';
 import 'package:studymat_app/screens/PdfViewerPage.dart';
+import 'package:studymat_app/screens/VideoScreen.dart';
 
 class InstitutionScreen extends StatefulWidget {
   static const routeName = "institution";
@@ -46,7 +47,7 @@ class _InstitutionScreenState extends State<InstitutionScreen> {
                                 .keys
                                 .map((k) {
                           return ExpansionTile(
-                            title: Text("    $k"),
+                            title: Text("    $k Year"),
                             children: (institutionData[i][j][k]
                                     as Map<dynamic, dynamic>)
                                 .keys
@@ -58,13 +59,13 @@ class _InstitutionScreenState extends State<InstitutionScreen> {
                                     .keys
                                     .map((m) {
                                   return ExpansionTile(
-                                    title: Text("        $m"),
+                                    title: Text("        Module $m"),
                                     children: (institutionData[i][j][k][l][m]
                                             as Map<dynamic, dynamic>)
                                         .keys
                                         .map((type) {
                                       return ExpansionTile(
-                                        title: Text("          $type"),
+                                        title: Text("          ${type}s"),
                                         children: (institutionData[i][j][k][l]
                                                 [m][type] as List<Mat>)
                                             .map((mat) {
@@ -80,6 +81,10 @@ class _InstitutionScreenState extends State<InstitutionScreen> {
                                                 Navigator.of(context).pushNamed(
                                                     PdfViewerPage.routeName,
                                                     arguments: file);
+                                              } else if (type == "video") {
+                                                Navigator.of(context).pushNamed(
+                                                    VideoScreen.routeName,
+                                                    arguments: mat);
                                               }
                                             },
                                             title:

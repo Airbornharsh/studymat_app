@@ -47,6 +47,7 @@ dependencies:
   flutter_pdfview: ^1.2.5
   path: ^1.8.2
   syncfusion_flutter_pdfviewer: ^20.4.50
+  youtube_player_flutter: ^8.1.2
 
 dev_dependencies:
   flutter_test:

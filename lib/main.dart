@@ -7,6 +7,7 @@ import 'package:studymat_app/providers/StudyMats.dart';
 import 'package:studymat_app/screens/HomeScreen.dart';
 import 'package:studymat_app/screens/InstitutionScreen.dart';
 import 'package:studymat_app/screens/PdfViewerPage.dart';
+import 'package:studymat_app/screens/VideoScreen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -42,7 +43,8 @@ class _MyAppState extends State<MyApp> {
         home: HomeScreen(),
         routes: {
           InstitutionScreen.routeName: (context) => InstitutionScreen(),
-          PdfViewerPage.routeName: (context) =>  PdfViewerPage()
+          PdfViewerPage.routeName: (context) => PdfViewerPage(),
+          VideoScreen.routeName: (context) => VideoScreen(),
         },
       ),
     );
