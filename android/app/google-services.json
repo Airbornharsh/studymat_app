@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "1020867390794",
+    "project_id": "studymat-1",
+    "storage_bucket": "studymat-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020867390794:android:d168a84aa6bd0cfe9b65b3",
+        "android_client_info": {
+          "package_name": "com.airbornharsh.studymat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1020867390794-co5c6gini1733vimhn6gcgperid2773c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByv4VQg3JHi_e28XXAy1Ny7rb8YQl1YBM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1020867390794-co5c6gini1733vimhn6gcgperid2773c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1020867390794-ha3n4jpfirt10t69ttb0bchji7p3qmi4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.airbornharsh.studymatApp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020867390794:android:76f8d094be33286c9b65b3",
+        "android_client_info": {
+          "package_name": "com.airbornharsh.studymat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1020867390794-co5c6gini1733vimhn6gcgperid2773c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByv4VQg3JHi_e28XXAy1Ny7rb8YQl1YBM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1020867390794-co5c6gini1733vimhn6gcgperid2773c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1020867390794-ha3n4jpfirt10t69ttb0bchji7p3qmi4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.airbornharsh.studymatApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

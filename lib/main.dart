@@ -1,15 +1,17 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import "package:provider/provider.dart";
+import 'package:studymat_app/firebase_options.dart';
 import 'package:studymat_app/providers/Settings.dart';
 import 'package:studymat_app/providers/StudyMats.dart';
 import 'package:studymat_app/screens/HomeScreen.dart';
-import "package:shared_preferences/shared_preferences.dart";
+import 'package:studymat_app/screens/InstitutionScreen.dart';
+import 'package:studymat_app/screens/PdfViewerPage.dart';
 
 void main() async {
-  // WidgetsFlutterBinding.ensureInitialized();
+  WidgetsFlutterBinding.ensureInitialized();
 
-  // await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
   runApp(const MyApp());
 }
@@ -38,7 +40,10 @@ class _MyAppState extends State<MyApp> {
           ),
         ),
         home: HomeScreen(),
-        routes: {},
+        routes: {
+          InstitutionScreen.routeName: (context) => InstitutionScreen(),
+          PdfViewerPage.routeName: (context) =>  PdfViewerPage()
+        },
       ),
     );
   }

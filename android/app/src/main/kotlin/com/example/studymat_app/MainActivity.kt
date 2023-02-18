@@ -1,4 +1,4 @@
-package com.example.studymat_app
+package com.airbornharsh.studymat_app
 
 import io.flutter.embedding.android.FlutterActivity
 
