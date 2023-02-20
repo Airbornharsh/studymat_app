@@ -4,6 +4,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:studymat_app/Utils/PdfApi.dart';
 import 'package:studymat_app/providers/Settings.dart';
 import 'package:studymat_app/providers/StudyMats.dart';
+import 'package:studymat_app/screens/AuthScreen.dart';
 import 'package:studymat_app/screens/InstitutionScreen.dart';
 import 'package:flutter_pdfview/flutter_pdfview.dart';
 import 'package:studymat_app/screens/PdfViewerPage.dart';
@@ -103,13 +104,17 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                       suffixIconColor: Colors.grey.shade900),
                   onSubmitted: (value) async {
-                    await Provider.of<StudyMat>(context, listen: false)
-                        .listInstitutes(_searchController.text);
+                    if (_searchController.text == "adminloginupdate") {
+                      Navigator.of(context).pushNamed(AuthScreen.routeName);
+                    } else {
+                      await Provider.of<StudyMat>(context, listen: false)
+                          .listInstitutes(_searchController.text);
 
-                    FocusScope.of(context).requestFocus(new FocusNode());
-                    setState(() {
-                      isSearching = false;
-                    });
+                      FocusScope.of(context).requestFocus(new FocusNode());
+                      setState(() {
+                        isSearching = false;
+                      });
+                    }
                   },
                 ),
               ),

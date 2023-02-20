@@ -4,9 +4,12 @@ import "package:provider/provider.dart";
 import 'package:studymat_app/firebase_options.dart';
 import 'package:studymat_app/providers/Settings.dart';
 import 'package:studymat_app/providers/StudyMats.dart';
+import 'package:studymat_app/providers/User.dart';
+import 'package:studymat_app/screens/AuthScreen.dart';
 import 'package:studymat_app/screens/HomeScreen.dart';
 import 'package:studymat_app/screens/InstitutionScreen.dart';
 import 'package:studymat_app/screens/PdfViewerPage.dart';
+import 'package:studymat_app/screens/UploadScreen.dart';
 import 'package:studymat_app/screens/VideoScreen.dart';
 
 void main() async {
@@ -31,6 +34,7 @@ class _MyAppState extends State<MyApp> {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider.value(value: Settings()),
+        ChangeNotifierProvider.value(value: User()),
         ChangeNotifierProvider.value(value: StudyMat()),
       ],
       child: MaterialApp(
@@ -45,6 +49,8 @@ class _MyAppState extends State<MyApp> {
           InstitutionScreen.routeName: (context) => InstitutionScreen(),
           PdfViewerPage.routeName: (context) => PdfViewerPage(),
           VideoScreen.routeName: (context) => VideoScreen(),
+          AuthScreen.routeName: (context) => const AuthScreen(),
+          UploadScreen.routeName: (context) => UploadScreen(),
         },
       ),
     );
