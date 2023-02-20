@@ -9,7 +9,7 @@ import 'package:studymat_app/screens/AuthScreen.dart';
 import 'package:studymat_app/screens/HomeScreen.dart';
 import 'package:studymat_app/screens/InstitutionScreen.dart';
 import 'package:studymat_app/screens/PdfViewerPage.dart';
-import 'package:studymat_app/screens/UploadScreen.dart';
+import 'package:studymat_app/screens/EditInstitutionScreen.dart';
 import 'package:studymat_app/screens/VideoScreen.dart';
 
 void main() async {
@@ -50,7 +50,7 @@ class _MyAppState extends State<MyApp> {
           PdfViewerPage.routeName: (context) => PdfViewerPage(),
           VideoScreen.routeName: (context) => VideoScreen(),
           AuthScreen.routeName: (context) => const AuthScreen(),
-          UploadScreen.routeName: (context) => UploadScreen(),
+          EditInstitutionScreen.routeName: (context) => EditInstitutionScreen(),
         },
       ),
     );

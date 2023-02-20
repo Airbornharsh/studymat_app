@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:studymat_app/providers/Settings.dart';
 import 'package:studymat_app/providers/User.dart';
 import 'package:studymat_app/screens/HomeScreen.dart';
-import 'package:studymat_app/screens/UploadScreen.dart';
+import 'package:studymat_app/screens/EditInstitutionScreen.dart';
 
 class AuthScreen extends StatefulWidget {
   static const routeName = "/auth";
@@ -114,7 +114,8 @@ class _AuthScreenState extends State<AuthScreen> {
                     },
                   ),
                 );
-                Navigator.of(context).popAndPushNamed(UploadScreen.routeName);
+                Navigator.of(context)
+                    .popAndPushNamed(EditInstitutionScreen.routeName);
               } else {
                 var snackBar = SnackBar(
                   content: Text(loginRes),

@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:studymat_app/providers/StudyMats.dart';
 
 class UserModel {
   String id;
@@ -22,9 +23,18 @@ class UserModel {
 class User with ChangeNotifier {
   String _accessToken = "";
   bool _isAuth = false;
+  List<Institution> _availableInstitutes = [];
 
   bool get getIsAuth {
     return _isAuth;
+  }
+
+  int get getAvailableInstitutionsLength {
+    return _availableInstitutes.length;
+  }
+
+  List<Institution> get getAvailableInstitutions {
+    return _availableInstitutes;
   }
 
   Future<String> signIn(String userName, String password) async {
@@ -67,7 +77,7 @@ class User with ChangeNotifier {
   ) async {
     var client = Client();
     final prefs = await SharedPreferences.getInstance();
-    String domainUri = prefs.get("shore_backend_uri") as String;
+    String domainUri = prefs.get("studymat_backend_uri") as String;
 
     if (password != confirmPasssword) {
       return "Password are Different";
@@ -96,6 +106,35 @@ class User with ChangeNotifier {
       return "Error";
     } finally {
       client.close();
+      notifyListeners();
+    }
+  }
+
+  void listAvailableInstitutes() async {
+    var client = Client();
+    final prefs = await SharedPreferences.getInstance();
+    String domainUri = prefs.getString("studymat_backend_uri") as String;
+    String? accessToken = prefs.getString("studymat_accessToken");
+    try {
+      var institutionRes = await client.post(
+          Uri.parse("$domainUri/api/signed/institution/availablelist"),
+          headers: {"authorization": "bearer $accessToken"});
+
+      final parsedInstitutionBody = json.decode(institutionRes.body);
+      _availableInstitutes.clear();
+
+      parsedInstitutionBody.forEach((institution) {
+        _availableInstitutes.add(Institution(
+            id: institution["_id"],
+            name: institution["name"],
+            photoLink: institution["photoLink"],
+            pdfs: institution["pdfs"],
+            playlists: institution["playlists"],
+            videos: institution["videos"]));
+      });
+    } catch (e) {
+      print(e);
+    } finally {
       notifyListeners();
     }
   }
