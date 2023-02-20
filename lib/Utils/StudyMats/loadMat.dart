@@ -37,14 +37,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
@@ -55,14 +55,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
@@ -77,14 +77,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
@@ -95,14 +95,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
@@ -121,14 +121,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
@@ -139,14 +139,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
@@ -161,14 +161,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
@@ -179,14 +179,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
@@ -209,14 +209,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
@@ -227,14 +227,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
@@ -249,14 +249,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
@@ -267,14 +267,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
@@ -293,14 +293,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
@@ -311,14 +311,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
@@ -333,14 +333,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
@@ -351,14 +351,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("pdf")) {
-                            temp[i][j][k][l][m]["pdf"].push(pdfObject);
+                            temp[i][j][k][l][m]["pdf"].add(pdfObject);
                           } else {
                             temp[i][j][k][l][m]["pdf"] = [pdfObject];
                           }
@@ -399,14 +399,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
@@ -417,14 +417,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
@@ -439,14 +439,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
@@ -457,14 +457,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
@@ -483,14 +483,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
@@ -501,14 +501,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
@@ -523,14 +523,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
@@ -541,14 +541,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
@@ -571,14 +571,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
@@ -589,14 +589,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
@@ -611,14 +611,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
@@ -629,14 +629,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
@@ -655,14 +655,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
@@ -673,14 +673,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
@@ -695,14 +695,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
@@ -713,14 +713,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("video")) {
-                            temp[i][j][k][l][m]["video"].push(videoObject);
+                            temp[i][j][k][l][m]["video"].add(videoObject);
                           } else {
                             temp[i][j][k][l][m]["video"] = [videoObject];
                           }
@@ -760,16 +760,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
@@ -780,16 +778,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
@@ -804,16 +800,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
@@ -824,16 +818,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
@@ -852,16 +844,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
@@ -872,16 +862,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
@@ -896,16 +884,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
@@ -916,16 +902,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
@@ -948,16 +932,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
@@ -968,16 +950,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
@@ -992,16 +972,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
@@ -1012,16 +990,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
@@ -1040,16 +1016,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
@@ -1060,16 +1034,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
@@ -1084,16 +1056,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
@@ -1104,16 +1074,14 @@ Future<Map> loadMatData(String institutionId) async {
                       pdf["modules"].forEach((m) {
                         if (temp[i][j][k][l].containsKey(m)) {
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }
                         } else {
                           temp[i][j][k][l][m] = {};
                           if (temp[i][j][k][l][m].containsKey("playlist")) {
-                            temp[i][j][k][l][m]["playlist"]
-                                .push(playlistObject);
+                            temp[i][j][k][l][m]["playlist"].add(playlistObject);
                           } else {
                             temp[i][j][k][l][m]["playlist"] = [playlistObject];
                           }

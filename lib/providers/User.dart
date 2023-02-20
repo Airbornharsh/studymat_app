@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:studymat_app/Utils/StudyMats/loadMat.dart';
 import 'package:studymat_app/providers/StudyMats.dart';
 
 class UserModel {
@@ -24,6 +25,7 @@ class User with ChangeNotifier {
   String _accessToken = "";
   bool _isAuth = false;
   List<Institution> _availableInstitutes = [];
+  Map<dynamic, dynamic> _institution = {};
 
   bool get getIsAuth {
     return _isAuth;
@@ -35,6 +37,14 @@ class User with ChangeNotifier {
 
   List<Institution> get getAvailableInstitutions {
     return _availableInstitutes;
+  }
+
+  Map<dynamic, dynamic> getAvailableInstitution(String institutionId) {
+    if (_institution.containsKey(institutionId)) {
+      return _institution[institutionId];
+    } else {
+      return {};
+    }
   }
 
   Future<String> signIn(String userName, String password) async {
@@ -118,7 +128,9 @@ class User with ChangeNotifier {
     try {
       var institutionRes = await client.post(
           Uri.parse("$domainUri/api/signed/institution/availablelist"),
-          headers: {"authorization": "bearer $accessToken"});
+          headers: {
+            "authorization": "bearer $accessToken",
+          });
 
       final parsedInstitutionBody = json.decode(institutionRes.body);
       _availableInstitutes.clear();
@@ -132,6 +144,53 @@ class User with ChangeNotifier {
             playlists: institution["playlists"],
             videos: institution["videos"]));
       });
+    } catch (e) {
+      print(e);
+    } finally {
+      notifyListeners();
+    }
+  }
+
+  Future loadMat(String institutionId) async {
+    try {
+      final matData = await loadMatData(institutionId);
+
+      _institution[institutionId] = matData;
+    } catch (e) {
+      print(e);
+    }
+  }
+
+  Future postMat(
+      {required institutionId,
+      required name,
+      required link,
+      required course,
+      required branch,
+      required year,
+      required subject,
+      required module,
+      required type}) async {
+    var client = Client();
+    final prefs = await SharedPreferences.getInstance();
+    String domainUri = prefs.getString("studymat_backend_uri") as String;
+    String? accessToken = prefs.getString("studymat_accessToken");
+    try {
+      var matRes =
+          await client.post(Uri.parse("$domainUri/api/signed/$type/create"),
+              body: json.encode({
+                "institutionId": institutionId,
+                "name": name,
+                "link": link,
+                "courses": [course],
+                "branches": [branch],
+                "years": [year],
+                "subjects": [subject],
+                "modules": [module]
+              }),
+              headers: {"authorization": "bearer $accessToken"});
+
+      print(matRes);
     } catch (e) {
       print(e);
     } finally {

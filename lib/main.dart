@@ -5,6 +5,7 @@ import 'package:studymat_app/firebase_options.dart';
 import 'package:studymat_app/providers/Settings.dart';
 import 'package:studymat_app/providers/StudyMats.dart';
 import 'package:studymat_app/providers/User.dart';
+import 'package:studymat_app/screens/AddMatScreen.dart';
 import 'package:studymat_app/screens/AuthScreen.dart';
 import 'package:studymat_app/screens/HomeScreen.dart';
 import 'package:studymat_app/screens/InstitutionScreen.dart';
@@ -51,6 +52,7 @@ class _MyAppState extends State<MyApp> {
           VideoScreen.routeName: (context) => VideoScreen(),
           AuthScreen.routeName: (context) => const AuthScreen(),
           EditInstitutionScreen.routeName: (context) => EditInstitutionScreen(),
+          AddMatScreen.routeName: (context) => AddMatScreen(),
         },
       ),
     );
